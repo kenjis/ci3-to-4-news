@@ -1,4 +1,7 @@
 <?php
+namespace App\Controllers;
+
+use Kenjis\CI3Compatible\Core\CI_Controller;
 
 /**
  * @property News_model $news_model

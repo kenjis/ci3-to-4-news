@@ -1,4 +1,7 @@
 <?php
+namespace App\Controllers;
+
+use Kenjis\CI3Compatible\Core\CI_Controller;
 
 class Pages extends CI_Controller
 {
