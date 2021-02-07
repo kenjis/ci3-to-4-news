@@ -1,4 +1,7 @@
 <?php
+namespace App\Database\Seeds;
+
+use Kenjis\CI3Compatible\Library\Seeder;
 
 class NewsSeeder extends Seeder
 {
@@ -6,13 +9,12 @@ class NewsSeeder extends Seeder
 
     public function run()
     {
-        $this->db->truncate($this->table);
+        $this->db_->truncate($this->table);
         // Reset autoincrement sequence number in SQLite
         if (
-            $this->db->dbdriver === 'sqlite3'
-            || $this->db->subdriver === 'sqlite'
+            $this->db->DBDriver === 'SQLite3'
         ) {
-            $this->db->query(
+            $this->db_->query(
                 "DELETE FROM sqlite_sequence WHERE name='$this->table';"
             );
         }
@@ -23,6 +25,6 @@ class NewsSeeder extends Seeder
             'slug'  => 'news-test',
             'text'  => 'News text',
         ];
-        $this->db->insert($this->table, $data);
+        $this->db_->insert($this->table, $data);
     }
 }
