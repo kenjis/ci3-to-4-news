@@ -1,6 +1,9 @@
 <?php
+namespace App\Database\Migrations;
 
-class Migration_Create_news extends CI_Migration
+use Kenjis\CI3Compatible\Library\CI_Migration;
+
+class CreateNews extends CI_Migration
 {
     public function up()
     {
