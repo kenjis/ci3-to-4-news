@@ -1,4 +1,7 @@
 <?php
+namespace App\Models;
+
+use Kenjis\CI3Compatible\Core\CI_Model;
 
 class News_model extends CI_Model
 {
@@ -24,7 +27,7 @@ class News_model extends CI_Model
     {
         $this->load->helper('url');
 
-        $slug = url_title($this->input->post('title'), 'dash', true);
+        $slug = url_title($this->input->post('title'), '-', true);
 
         $data = [
             'title' => $this->input->post('title'),
