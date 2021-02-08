@@ -1,6 +1,6 @@
 # Upgrade CodeIgniter3 News Tutorial to CodeIgniter4
 
-This repository is a sample of [CodeIgniter3 News Tutorial](https://github.com/kenjis/ci3-news) upgraded to CodeIgniter4 using the *[ci3-to-4-upgrade-helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)*.
+This repository is a sample of [CodeIgniter3 News Tutorial](https://github.com/kenjis/ci3-news) upgraded to CodeIgniter4 using *[ci3-to-4-upgrade-helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)*.
 
 See <https://codeigniter.com/userguide3/tutorial/index.html>.
 
