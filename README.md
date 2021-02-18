@@ -42,7 +42,7 @@ $ php spark migrate
 $ php spark db:seed NewsSeeder
 ```
 
-### Run PHP built-in server
+### Run PHP built-in Server
 
 ```
 $ php spark serve
