@@ -48,6 +48,13 @@ $ php spark db:seed NewsSeeder
 $ php spark serve
 ```
 
+### Run PHPUnit Tests
+
+```
+$ composer test
+$ composer coverage
+```
+
 ## Related Projects for CodeIgniter 4.x
 
 - [CodeIgniter 3 to 4 Upgrade Helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)
