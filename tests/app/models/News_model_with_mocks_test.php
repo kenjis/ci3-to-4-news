@@ -27,11 +27,6 @@ class News_model_with_mocks_test extends TestCase
         // Inject mock object into CodeIgniter super object
         $this->CI->load = $loader;
 
-        if (! class_exists('CI_DB', false)) {
-            // Define CI_DB class
-            eval('class CI_DB extends CI_DB_query_builder { }');
-        }
-
         $this->obj = new News_model();
     }
 
