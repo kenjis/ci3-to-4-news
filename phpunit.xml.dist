@@ -29,6 +29,7 @@
 	<testsuites>
 		<testsuite name="App">
 			<directory>./tests</directory>
+			<directory suffix="_test.php">./tests/app</directory>
 		</testsuite>
 	</testsuites>
 	<logging>
