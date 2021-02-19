@@ -29,7 +29,8 @@ class News_model_with_mocks_test extends TestCase
         /** @var CI_Loader $loader */
         $loader = $this->getDouble(CI_Loader::class, [
             'database' => $this->returnSelf(),
-        ]);
+        ], true);
+        $loader->setController($this->CI);
 
         // Inject mock object into CodeIgniter super object
         $this->CI->load = $loader;
