@@ -176,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kenjis/ci3-to-4-upgrade-helper.git",
-                "reference": "6fe76a21b4d23bef80d86609138a485be1f9871f"
+                "reference": "9e753acd5eb5c3355129e162f3c6d8dbb50d0bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kenjis/ci3-to-4-upgrade-helper/zipball/6fe76a21b4d23bef80d86609138a485be1f9871f",
-                "reference": "6fe76a21b4d23bef80d86609138a485be1f9871f",
+                "url": "https://api.github.com/repos/kenjis/ci3-to-4-upgrade-helper/zipball/9e753acd5eb5c3355129e162f3c6d8dbb50d0bf7",
+                "reference": "9e753acd5eb5c3355129e162f3c6d8dbb50d0bf7",
                 "shasum": ""
             },
             "require": {
@@ -232,7 +232,7 @@
                 "issues": "https://github.com/kenjis/ci3-to-4-upgrade-helper/issues",
                 "source": "https://github.com/kenjis/ci3-to-4-upgrade-helper/tree/1.x"
             },
-            "time": "2021-02-17T01:57:56+00:00"
+            "time": "2021-02-19T07:43:45+00:00"
         },
         {
             "name": "kint-php/kint",
