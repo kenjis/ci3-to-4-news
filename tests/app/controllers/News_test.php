@@ -1,10 +1,11 @@
 <?php
 
+use Kenjis\CI3Compatible\Test\TestCase\FeatureTestCase;
 /**
  * @group controller
  * @group database
  */
-class News_test extends TestCase
+class News_test extends FeatureTestCase
 {
     public static function setUpBeforeClass(): void
     {

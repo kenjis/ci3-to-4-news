@@ -1,9 +1,11 @@
 <?php
 
+use Kenjis\CI3Compatible\Test\TestCase\FeatureTestCase;
+
 /**
  * @group controller
  */
-class Pages_test extends TestCase
+class Pages_test extends FeatureTestCase
 {
     public function test_When_you_access_home_Then_you_see_Home()
     {
