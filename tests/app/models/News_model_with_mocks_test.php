@@ -128,9 +128,9 @@ class News_model_with_mocks_test extends TestCase
         $input->expects($this->any())->method('post')
             ->willReturnMap(
                 [
-                    // post($index = NULL, $xss_clean = NULL)
-                    ['title', null, 'News Title'],
-                    ['text',  null, 'News Text'],
+                    // post($index = NULL, $xss_clean = FALSE)
+                    ['title', false, 'News Title'],
+                    ['text',  false, 'News Text'],
                 ]
             );
 
