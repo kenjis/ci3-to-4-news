@@ -1,5 +1,7 @@
 <?php
 
+use App\Database\Seeds\NewsSeeder;
+use App\Models\News_model;
 use Kenjis\CI3Compatible\Test\TestCase\DbTestCase;
 
 /**
@@ -9,18 +11,24 @@ use Kenjis\CI3Compatible\Test\TestCase\DbTestCase;
 class News_model_test extends DbTestCase
 {
     /**
+     * Should run seeding only once?
+     *
+     * @var boolean
+     */
+    protected $seedOnce = true;
+
+    /**
+     * The seed file(s) used for all tests within this test case.
+     * Should be fully-namespaced or relative to $basePath
+     *
+     * @var string|array
+     */
+    protected $seed = NewsSeeder::class;
+
+    /**
      * @var News_model
      */
     private $obj;
-
-    public static function setUpBeforeClass(): void
-    {
-        parent::setUpBeforeClass();
-
-        $CI =& get_instance();
-        $CI->load->library('seeder');
-        $CI->seeder->call('NewsSeeder');
-    }
 
     public function setUp(): void
     {
