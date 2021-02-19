@@ -26,6 +26,7 @@ class News_model_with_mocks_test extends TestCase
         $this->resetInstance();
 
         // Create mock object for CI_Loader
+        /** @var CI_Loader $loader */
         $loader = $this->getDouble(CI_Loader::class, [
             'database' => $this->returnSelf(),
         ]);
