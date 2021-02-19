@@ -1,5 +1,11 @@
 <?php
 
+use App\Models\News_model;
+use Kenjis\CI3Compatible\Core\CI_Loader;
+use Kenjis\CI3Compatible\Core\CI_Input;
+use Kenjis\CI3Compatible\Database\CI_DB_result;
+use Kenjis\CI3Compatible\Database\CI_DB;
+use Kenjis\CI3Compatible\Test\TestCase\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 /**
