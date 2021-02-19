@@ -1,20 +1,28 @@
 <?php
 
+use App\Database\Seeds\NewsSeeder;
 use Kenjis\CI3Compatible\Test\TestCase\FeatureTestCase;
+
 /**
  * @group controller
  * @group database
  */
 class News_test extends FeatureTestCase
 {
-    public static function setUpBeforeClass(): void
-    {
-        parent::setUpBeforeClass();
+    /**
+     * Should run seeding only once?
+     *
+     * @var boolean
+     */
+    protected $seedOnce = true;
 
-        $CI =& get_instance();
-        $CI->load->library('seeder');
-        $CI->seeder->call('NewsSeeder');
-    }
+    /**
+     * The seed file(s) used for all tests within this test case.
+     * Should be fully-namespaced or relative to $basePath
+     *
+     * @var string|array
+     */
+    protected $seed = NewsSeeder::class;
 
     public function test_When_access_news_Then_see_news_archive()
     {
