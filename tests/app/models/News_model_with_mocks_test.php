@@ -14,6 +14,8 @@ class News_model_with_mocks_test extends TestCase
 
     public function setUp(): void
     {
+        parent::setUp();
+
         // Reset CodeIgniter super object
         $this->resetInstance();
 

@@ -24,6 +24,8 @@ class News_model_test extends DbTestCase
 
     public function setUp(): void
     {
+        parent::setUp();
+
         $this->resetInstance();
         $this->CI->load->model('news_model');
         $this->obj = $this->CI->news_model;
