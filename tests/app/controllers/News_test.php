@@ -69,7 +69,7 @@ class News_test extends FeatureTestCase
                 'text'  => '',
             ]
         );
-        $this->assertStringContainsString('<p>The Title field is required.</p>', $output);
-        $this->assertStringContainsString('<p>The Text field is required.</p>', $output);
+        $this->assertStringContainsString('<li>The Title field is required.</li>', $output);
+        $this->assertStringContainsString('<li>The Text field is required.</li>', $output);
     }
 }
