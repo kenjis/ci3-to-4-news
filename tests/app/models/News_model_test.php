@@ -1,10 +1,12 @@
 <?php
 
+use Kenjis\CI3Compatible\Test\TestCase\DbTestCase;
+
 /**
  * @group model
  * @group database
  */
-class News_model_test extends TestCase
+class News_model_test extends DbTestCase
 {
     /**
      * @var News_model
