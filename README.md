@@ -9,6 +9,7 @@ See <https://codeigniter.com/userguide3/tutorial/index.html>.
 ```
 ci3-to-4-news/
 ├── app/
+├── tests/
 ├── composer.json
 ├── composer.lock
 ├── public/
@@ -52,7 +53,6 @@ $ php spark serve
 
 ```
 $ composer test
-$ composer coverage
 ```
 
 ## Related Projects for CodeIgniter 4.x
