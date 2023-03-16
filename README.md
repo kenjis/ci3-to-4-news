@@ -22,7 +22,7 @@ ci3-to-4-news/
 
 ## Requirements
 
-- PHP 7.3 or later
+- PHP 7.4 or later
 - `composer` command (See [Composer Installation](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos))
 - Git
 
@@ -32,7 +32,7 @@ ci3-to-4-news/
 
 ```
 $ git clone https://github.com/kenjis/ci3-to-4-news
-$ cd /path/to/ci3-to-4-news/
+$ cd ci3-to-4-news/
 $ composer install
 ```
 
